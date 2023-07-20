@@ -1,0 +1,86 @@
+h1#shadow{
+    text-shadow: 2px 2px 5px green;
+    animation-name: first;
+    animation-duration: 2s;
+  
+
+}
+
+
+@keyframes first {
+    from{background-color: rgb(199, 199, 236)} to {background-color: pink;}
+}
+
+button.btn{
+    color: black;
+    width:150px;
+    background-color: green;
+    display: inline-block;
+    width:120px;
+    padding: 5px;
+   
+    
+    
+}
+
+.btn-tip{
+    visibility: hidden; 
+    width:120px;
+    padding: 5px;
+    color: black;
+    position: absolute;
+    /* z-index: 1; */
+    margin:20px;
+
+}
+
+.btn:hover .btn-tip{
+    visibility: visible;
+   
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-color: green;
+    }
+    
+}
+
+.flex-container{
+    display: flex;
+    background: dodgerblue;
+    flex-direction: column;
+}
+
+.flex-container> div{
+    margin: 10px;
+    width:80px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 30px;
+    background-color: white;
+}
+
+
+.grid-container{
+    display:grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: auto auto auto;
+ 
+    background:lightblue;
+    padding:30px;
+    margin:20px;
+  
+   
+}
+
+.grid-item{
+    background:white;
+    border: 1px solid black;
+    padding: 3px;
+    font-size: medium;
+   
+    width: 100%;
+    align-items: center;
+    font-size: larger;
+}
